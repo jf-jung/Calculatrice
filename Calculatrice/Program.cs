@@ -20,13 +20,26 @@ namespace Calculatrice
         {
             float nombre1;
             float nombre2;
-            float somme;
+            float resultat;
 
             nombre1 = SaisirFloat("Saisie premier nombre");
             nombre2 = SaisirFloat("Saisie second nombre");
 
-            somme = nombre1 + nombre2;
-            Console.WriteLine("La somme vaut : " + somme.ToString());
+            resultat = nombre1 + nombre2;
+            Console.WriteLine("La somme vaut : " + resultat.ToString());
+        }
+
+        static void Soustraire()
+        {
+            float nombre1;
+            float nombre2;
+            float resultat;
+
+            nombre1 = SaisirFloat("Saisie premier nombre");
+            nombre2 = SaisirFloat("Saisie second nombre");
+
+            resultat = nombre1 - nombre2;
+            Console.WriteLine("La différence vaut : " + resultat.ToString());
         }
 
         static void Main(string[] args)
