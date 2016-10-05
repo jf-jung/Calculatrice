@@ -19,28 +19,38 @@ namespace Calculatrice
         static void Menu()
         {
             string operation;
-            Console.WriteLine("Choisissez votre opération");
-            operation = Console.ReadLine();
-            while (operation != "+" && operation != "-" && operation != "*" && operation != "/")
+            bool quit;
+            quit = false;
+            while (quit == false)
             {
-                Console.WriteLine("Opération invalide. Choississez une opération supportée");
+                Console.WriteLine("Choisissez votre opération (q pour quitter)");
                 operation = Console.ReadLine();
-            }
-            if (operation == "+")
-            {
-                Additioner();
-            }
-            if (operation == "-")
-            {
-                Soustraire();
-            }
-            if (operation == "*")
-            {
-                Multiplier();
-            }
-            if (operation == "/")
-            {
-                Diviser();
+                if (operation == "q")
+                {
+                    quit = true;
+                    continue;
+                }
+                while (operation != "+" && operation != "-" && operation != "*" && operation != "/")
+                {
+                    Console.WriteLine("Opération invalide. Choississez une opération supportée");
+                    operation = Console.ReadLine();
+                }
+                if (operation == "+")
+                {
+                    Additioner();
+                }
+                if (operation == "-")
+                {
+                    Soustraire();
+                }
+                if (operation == "*")
+                {
+                    Multiplier();
+                }
+                if (operation == "/")
+                {
+                    Diviser();
+                }
             }
         }
 
