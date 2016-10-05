@@ -16,6 +16,34 @@ namespace Calculatrice
             return float.Parse(reponse);
         }
 
+        static void Menu()
+        {
+            string operation;
+            Console.WriteLine("Choisissez votre opération");
+            operation = Console.ReadLine();
+            while (operation != "+" || operation != "-" || operation != "*" || operation != "/")
+            {
+                Console.WriteLine("Opération invalide. Choississez une opération supportée");
+                operation = Console.ReadLine();
+            }
+            if (operation == "+")
+            {
+                Additioner();
+            }
+            if (operation == "-")
+            {
+                Soustraire();
+            }
+            if (operation == "*")
+            {
+                Multiplier();
+            }
+            if (operation == "/")
+            {
+                Diviser();
+            }
+        }
+
         static void Additioner()
         {
             float nombre1;
