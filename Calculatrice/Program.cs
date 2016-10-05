@@ -42,6 +42,19 @@ namespace Calculatrice
             Console.WriteLine("La différence vaut : " + resultat.ToString());
         }
 
+        static void Multiplier()
+        {
+            float nombre1;
+            float nombre2;
+            float resultat;
+
+            nombre1 = SaisirFloat("Saisie premier nombre");
+            nombre2 = SaisirFloat("Saisie second nombre");
+
+            resultat = nombre1 * nombre2;
+            Console.WriteLine("Le produit vaut : " + resultat.ToString());
+        }
+
         static void Main(string[] args)
         {
         }
