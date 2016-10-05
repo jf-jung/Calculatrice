@@ -103,6 +103,7 @@ namespace Calculatrice
 
         static void Main(string[] args)
         {
+            Menu();
         }
     }
 }
