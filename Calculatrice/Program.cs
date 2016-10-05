@@ -55,6 +55,24 @@ namespace Calculatrice
             Console.WriteLine("Le produit vaut : " + resultat.ToString());
         }
 
+        static void Diviser()
+        {
+            float nombre1;
+            float nombre2;
+            float resultat;
+
+            nombre1 = SaisirFloat("Saisie premier nombre");
+            nombre2 = 0;
+            while (nombre2 == 0)
+            {
+                nombre2 = SaisirFloat("Saisie second nombre");
+            }
+            
+
+            resultat = nombre1 / nombre2;
+            Console.WriteLine("Le résultat vaut : " + resultat.ToString());
+        }
+
         static void Main(string[] args)
         {
         }
