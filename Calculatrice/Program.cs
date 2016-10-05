@@ -21,7 +21,7 @@ namespace Calculatrice
             string operation;
             Console.WriteLine("Choisissez votre opération");
             operation = Console.ReadLine();
-            while (operation != "+" || operation != "-" || operation != "*" || operation != "/")
+            while (operation != "+" && operation != "-" && operation != "*" && operation != "/")
             {
                 Console.WriteLine("Opération invalide. Choississez une opération supportée");
                 operation = Console.ReadLine();
